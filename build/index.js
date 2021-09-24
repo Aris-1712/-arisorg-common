@@ -13,3 +13,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./Errors/GeneralErrors"), exports);
 __exportStar(require("./Middleware/ErrorHandler"), exports);
 __exportStar(require("./utils/auth"), exports);
+__exportStar(require("./Errors/InvalidParamsError"), exports);
