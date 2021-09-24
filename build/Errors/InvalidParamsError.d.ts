@@ -11,4 +11,4 @@ declare class InvalidParamsError extends Error {
         param: string | undefined;
     }[];
 }
-export { InvalidParamsError };
+export default InvalidParamsError;

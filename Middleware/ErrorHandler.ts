@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import {GeneralErrors} from "../Errors/GeneralErrors";
-import { InvalidParamsError } from "../Errors/InvalidParamsError";
+import GeneralErrors  from "../Errors/GeneralErrors";
+import InvalidParamsError from "../Errors/InvalidParamsError";
 
 const ErrorHandler=(error:Error,req:Request,res:Response,next:NextFunction)=>{
     if(error instanceof GeneralErrors){
@@ -16,4 +16,4 @@ const ErrorHandler=(error:Error,req:Request,res:Response,next:NextFunction)=>{
 res.status(400).send([{msg:error.message}])
 }
 
-export {ErrorHandler}
+export default ErrorHandler

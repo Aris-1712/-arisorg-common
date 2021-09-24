@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.InvalidParamsError = void 0;
 class InvalidParamsError extends Error {
     constructor(errors) {
         super("Invalid Param Error");
@@ -14,4 +13,4 @@ class InvalidParamsError extends Error {
         Object.setPrototypeOf(this, InvalidParamsError.prototype);
     }
 }
-exports.InvalidParamsError = InvalidParamsError;
+exports.default = InvalidParamsError;

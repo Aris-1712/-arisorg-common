@@ -21,4 +21,4 @@ class GeneralErrors extends Error{
 
 
 
-export  {GeneralErrors}
+export default GeneralErrors

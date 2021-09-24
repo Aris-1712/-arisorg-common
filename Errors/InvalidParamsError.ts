@@ -21,4 +21,4 @@ class InvalidParamsError extends Error {
 }
 
 
-export {InvalidParamsError}
+export default InvalidParamsError
