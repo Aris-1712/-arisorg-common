@@ -13,4 +13,4 @@ declare class GeneralErrors extends Error {
         param: string | undefined;
     }[];
 }
-export default GeneralErrors;
+export { GeneralErrors };

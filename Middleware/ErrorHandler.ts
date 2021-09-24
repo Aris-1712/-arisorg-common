@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import GeneralErrors from "../Errors/GeneralErrors";
+import {GeneralErrors} from "../Errors/GeneralErrors";
 import { InvalidParamsError } from "../Errors/InvalidParamsError";
 
 const ErrorHandler=(error:Error,req:Request,res:Response,next:NextFunction)=>{
