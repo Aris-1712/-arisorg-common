@@ -5,8 +5,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ErrorHandler = void 0;
 const GeneralErrors_1 = __importDefault(require("../Errors/GeneralErrors"));
+const InvalidParamsError_1 = require("../Errors/InvalidParamsError");
 const ErrorHandler = (error, req, res, next) => {
     if (error instanceof GeneralErrors_1.default) {
+        console.log("here");
+        res.status(error.status).send({ error: error.errorFormat() });
+        return;
+    }
+    if (error instanceof InvalidParamsError_1.InvalidParamsError) {
         console.log("here");
         res.status(error.status).send({ error: error.errorFormat() });
         return;
