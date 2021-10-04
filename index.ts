@@ -10,3 +10,4 @@ export * from './Errors/InvalidParamsError'
 export {TicketCreatorListener}
 import TicketCreatedData from './NATS/Types/TicketCreatedData'
 export {TicketCreatedData}
+// SVCQvg/JegnLHE3RHrSP79W3pvI=
